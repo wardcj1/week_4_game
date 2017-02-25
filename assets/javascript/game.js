@@ -4,12 +4,13 @@
   // Now for the hard part. Creating multiple crystals each with their own unique number value.
 function startGame(){
   // We begin by expanding our array to include four options.
-  var targetNumber = 50;
+  document.getElementById("counter-print").innerHTML = "0";
+  var targetNumber = Math.floor((Math.random() * 120) + 19);
   $("#number-to-guess").text(targetNumber);
 // 19-120
 
   var counter = 0;
-  var numberOptions = [10, 5, 3, 7];
+  var numberOptions = [Math.floor((Math.random() * 12) + 1), Math.floor((Math.random() * 12) + 1), Math.floor((Math.random() * 12) + 1), Math.floor((Math.random() * 12) + 1)];
 // 1-12
 
   // Next we create a for loop to create crystals for every numberOption.
