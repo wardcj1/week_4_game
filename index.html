@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Crystals Collector Game</title>
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-   <!-- Orbitron, Dosis font families -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis|Orbitron|Chango" rel="stylesheet">
-   <!-- Bootstrap File -->
- <link rel="stylesheet"
- href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <!-- CSS file -->  
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crystals Collector Game</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Orbitron, Dosis font families -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Orbitron|Chango" rel="stylesheet">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-
-<div class="container">
-  <div class="row">
-    <div class="gameName col-md-3"><center>CrystalsCollector!</center></div>
-    <div class="col-md-9"></div> 
-  </div>
-  <div class="row">
-<div class="gameRules col-md-7">
-      <p>You will be given a random number at the start of the game.</p>
-      <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-      <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-      <p>The value of each crystal is hidden from you until you click on it.</p>
-      <p>Each time when the game starts, the game will change the values of each crystal.</p>
-    <div class="col-md-5"></div>
-  </div>
- </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div><center><span class="scoreBox col-md-5" id="number-to-guess"></span></center></div>
-    <div class="col-md-4">
-        <p class="alert alert-success">Wins: <span id="win-counter"></span></p>
-        <p class="alert alert-warning">Losses: <span id="loss-counter"></span></p>  
-    </div>    
-    <div class="col-md-3"></div>
-      </div>
-    <div class="row">
-    <div id="crystals">
-    </div>
-      </div>
-      <div class="row">
-       <div class="col-md-6">
-       <div class="alert alert-danger">Your score is: </div>
-       </div>
-       <div class="col-md-6">
-          <p class="alert alert-danger"><span id="counter-print"></span></p>
+    <div class="container">
+        <div class="row">
+            <div class="gameName col-md-3">
+                <center>Crystals Collector!</center>
+            </div>
+            <div class="col-md-9"></div>
         </div>
-      </div>   
+        <div class="row">
+            <div class="gameRules col-md-7">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
     </div>
-
-<div class="footerbox"></div>
-
-<footer class="footer">
-  <h4>(C)Copyright 2016 Chris Ward<h4>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div>
+                <center><span class="scoreBox col-md-5" id="number-to-guess"></span></center>
+            </div>
+            <div class="col-md-4">
+                <p class="alert alert-success">Wins: <span id="win-counter"></span></p>
+                <p class="alert alert-warning">Losses: <span id="loss-counter"></span></p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div id="crystals">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="alert alert-danger">Your score is: </div>
+            </div>
+            <div class="col-md-2">
+                <p class="alert alert-warning"><span class="counter-print" id="counter-print"></span></p>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+    </div>
+    <div class="footerbox"></div>
+    <footer class="footer">
+        <h4>(C)Copyright 2016 Chris Ward<h4>
 </footer>
 <script src="assets/javascript/game.js"></script>
 </body>

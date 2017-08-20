@@ -5,7 +5,12 @@
     .crystal-image {
       width: 150px;
       padding: 10px;
+      margin-right: 25px;
       border-radius: 30px;
+      border-width: 2px;
+      border-color: purple;
+      border-style: solid;
+      cursor: pointer;
     }
 
     .scoreBox {
@@ -21,6 +26,12 @@
       margin-bottom: 0px;
       letter-spacing: 1.75px;
       border-radius: 5px;
+    }
+
+    .counter-print{
+      font-size: 45px;
+      font-family: 'Chango';
+      color: firebrick;
     }
 
     .gameName {
